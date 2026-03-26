@@ -8,16 +8,22 @@ const Header = () => {
     <header className="header">
       <div className="container header-inner">
         <Link to="/" className="logo hero-logo">
-          <span className="logo-mark">▷</span>
+          <span className="logo-mark">▶</span>
           <span className="logo-text">HERO.IO</span>
         </Link>
 
         <nav className="nav">
           <NavLink to="/" end className={navClass}>
-            Home
+            <span className="nav-icon">⌂</span>
+            <span>Home</span>
           </NavLink>
           <NavLink to="/apps" className={navClass}>
-            Apps
+            <span className="nav-icon">◔</span>
+            <span>Apps</span>
+          </NavLink>
+          <NavLink to="/installation" className={navClass}>
+            <span className="nav-icon">⤓</span>
+            <span>Installation</span>
           </NavLink>
         </nav>
 
@@ -27,7 +33,8 @@ const Header = () => {
           rel="noreferrer"
           className="contribute-btn"
         >
-          Github Contribute
+          <span className="contribute-icon">◔</span>
+          <span>Contribute</span>
         </a>
       </div>
     </header>
