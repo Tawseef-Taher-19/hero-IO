@@ -1,4 +1,6 @@
 import { NavLink, Link } from "react-router-dom";
+// 1. Import the logo at the top
+import logoImg from "../assets/logo.png";
 
 const Header = () => {
   const navClass = ({ isActive }) =>
@@ -8,7 +10,10 @@ const Header = () => {
     <header className="header">
       <div className="container header-inner">
         <Link to="/" className="logo hero-logo">
-          <span className="logo-mark">▶</span>
+          {/* 2. Replace the span icon with the img tag */}
+          <div className="logo-img-wrapper">
+            <img src={logoImg} alt="HERO.IO Logo" className="header-logo-img" />
+          </div>
           <span className="logo-text">HERO.IO</span>
         </Link>
 
@@ -28,7 +33,7 @@ const Header = () => {
         </nav>
 
         <a
-          href="https://github.com/your-github-username"
+          href="https://github.com/"
           target="_blank"
           rel="noreferrer"
           className="contribute-btn"

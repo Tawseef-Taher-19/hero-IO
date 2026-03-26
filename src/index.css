@@ -55,7 +55,7 @@ body {
 }
 
 #root {
-  width: 1126px;
+  width: 100%;
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
@@ -112,7 +112,9 @@ code {
 
 
 /* grid layout and responsiveness */
-.muted { color: var(--muted); }
+.muted { color: var(--muted); 
+margin-bottom: 5px;
+}
 .home-layout { gap: 28px; }
 
 .hero {
@@ -140,6 +142,9 @@ code {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+  margin-left: 3rem;
+  margin-bottom: 3rem;
+  margin-right: 3rem;
 }
 
 .app-card {
@@ -289,6 +294,7 @@ body {
   border: 2px solid #3b82f6;
   border-radius: 50%;
   color: #3b82f6;
+  margin-left: 3rem;
 }
 
 /* App Card Redesign */
@@ -459,7 +465,7 @@ body {
 .footer {
   background: #ffffff;
   border-top: 1px solid var(--border);
-  padding: 20px 0 0; /* More padding on top like the example */
+  padding: 20px 2rem 2rem; /* More padding on top like the example */
   color: #fdfdfd;
   background: #001931;
 }
@@ -623,9 +629,13 @@ body {
   object-fit: cover;
 }
 
+.app-info{
+  margin: 0 .5rem;
+}
+
 /* Typography & Meta Pills */
 .app-info h3 {
-  margin: 0;
+  margin: 0rem;
   font-size: 0.95rem;
   color: #111827;
   font-weight: 700;
@@ -786,11 +796,12 @@ body {
   background: linear-gradient(135deg, #7c3aed, #3b82f6);
   color: white;
   padding: 11px 18px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 700;
   min-width: 120px;
   box-shadow: 0 8px 18px rgba(124, 58, 237, 0.2);
   text-decoration: none;
+  margin-right: 3rem;
 }
 
 .contribute-icon {
@@ -855,4 +866,259 @@ body {
   height: 2px;
   background: #7c3aed;
   border-radius: 999px;
+}
+
+/* commit 4  */
+.section-block {
+  display: grid;
+  gap: 20px;
+}
+
+.title-box {
+  text-align: center;
+  padding: 28px;
+}
+
+.title-box h1 {
+  margin: 0 0 10px;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.toolbar-controls {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-left: 3rem;
+  margin-bottom: 3rem;
+  margin-right: 3rem;
+
+}
+
+.input {
+  min-width: 220px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: #ffffff; /* Adjusted to keep it clean on light mode */
+  color: var(--text);
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  border-color: var(--brand);
+}
+
+.input::placeholder {
+  color: #94a3b8;
+}
+
+.center-box {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.btn-group {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+div.space{
+  padding:1rem;
+}
+
+span.gradient {
+  background: linear-gradient(135deg, #7c3aed, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p > strong {
+  color: var(--brand);
+  font-size: 1.2rem;
+}
+
+.app-thumb {
+  width: 90%;
+  /* height: 180px; */
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 18px;
+}
+/* app image size fix */
+.app-thumb {
+  height: 255px;
+  display: grid;
+  place-items: center; /* Keeps the 75% image perfectly centered */
+  background: linear-gradient(180deg, #eee8fb, #dfd5fb);
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.app-thumb img {
+  /* This shrinks the image to 75% of the container's size */
+  width: 75%;
+  height: 75%;
+  /* Contain ensures the aspect ratio stays perfect without cropping */
+  object-fit: contain;
+  /* Optional: adds a soft shadow to the app icon for depth */
+  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.1));
+}
+
+section.trending-section{
+  margin: 2rem ;
+  padding: 0 2rem;
+}
+
+div.show-all-wrap{
+  
+  width:5rem;
+  padding: 10px 70px;
+  /* background-color:   linear-gradient(180deg, rgb(170, 31, 170), #a252f6); */
+  background-color: #a252f6;
+  color: white;
+  border-radius:5%;
+  margin: 1rem auto;
+  text-align: center;
+  
+}
+
+/* logo size */
+/* Logo Image Styling */
+.logo-img-wrapper {
+  width: 40px; /* Adjust based on your logo's aspect ratio */
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.header-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensures the logo isn't stretched */
+}
+
+/* Ensure the text stays aligned with the image */
+.hero-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  margin-left: 3rem;
+}
+
+/* footer logo */
+/* Shared Logo Image Styling */
+.logo-img-wrapper {
+  width: 36px; /* Slightly smaller for the footer look */
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Ensure footer brand column aligns correctly */
+.footer-col-brand .hero-logo {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+/* link button */
+.hero-store-buttons {
+  margin-top: 22px;
+  margin-bottom: 22px;
+  display: flex;
+  justify-content: center;
+  gap: 16px; /* Slightly tighter gap */
+  flex-wrap: wrap;
+}
+
+.store-btn {
+  padding: 14px 26px;
+  border-radius: 14px; /* More rounded corners */
+  font-weight: 800;
+  font-size: 0.95rem;
+  border: 1px solid #d9d9d9;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #f7f7f7;
+  color: #111827;
+  
+  /* Symmetry & Alignment */
+  min-width: 230px; 
+  justify-content: center;
+  
+  /* Elevation & Interaction */
+  box-shadow: 0 6px 14px rgba(15, 23, 42, 0.06);
+  transition: background 0.2s ease, transform 0.2s ease;
+  text-decoration: none;
+}
+
+.store-btn.light {
+  background: #f7f7f7;
+  color: #111827;
+}
+
+.store-btn:hover {
+  background: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.1);
+}
+
+/* Specific icon styling */
+.store-btn-play .store-icon {
+  color: #22c55e;
+}
+
+.store-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px; /* Larger icon area */
+  font-size: 1.35rem; /* Bigger icons */
+}
+
+/* Responsive Scaling */
+@media (max-width: 768px) {
+  .hero-store-buttons {
+    gap: 12px;
+  }
+
+  .store-btn {
+    padding: 12px 18px;
+    font-size: 0.9rem;
+    min-width: 200px; /* Scaled down for mobile */
+  }
+}
+
+.title-box h1{
+  margin-bottom: 2rem;
+  /* font-size: 20px; */
+}
+
+.purple{
+  color: var(--brand);
 }

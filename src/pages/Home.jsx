@@ -3,34 +3,47 @@ import apps from "../data/apps.json";
 import AppCard from "../components/AppCard";
 
 const Home = () => {
+  // Pulling the first 8 apps for the trending section
   const topApps = apps.slice(0, 8);
 
   return (
     <div className="home-page">
+      {/* --- HERO SECTION --- */}
       <section className="hero-lite">
         <div className="hero-lite-content">
           <div className="hero-copy">
             <h1>
               We Build
-              <br />
-              <span>Productive Apps</span>
+              <div class="space"></div>
+              <span class="gradient">Productive Apps</span>
             </h1>
             <p>
-              At HERO.IO, we craft innovative apps designed to make everyday
-              life simpler, smarter, and more exciting. Our goal is to turn
-              your ideas into digital experiences that truly make an impact.
+              At <strong>HERO.IO</strong>, we craft innovative apps designed to 
+              make everyday life simpler, smarter, and more exciting. Our goal 
+              is to turn your ideas into digital experiences that truly make an impact.
             </p>
 
             <div className="hero-store-buttons">
-              <a href="https://play.google.com/store" target="_blank" rel="noreferrer" className="store-btn light store-btn-play">
+              <a 
+                href="https://play.google.com/store" 
+                target="_blank" 
+                rel="noreferrer" 
+                className="store-btn light"
+              >
                 <span className="store-icon">▶</span> Google Play
               </a>
-              <a href="https://www.apple.com/app-store/" target="_blank" rel="noreferrer" className="store-btn light">
+              <a 
+                href="https://www.apple.com/app-store/" 
+                target="_blank" 
+                rel="noreferrer" 
+                className="store-btn light"
+              >
                 <span className="store-icon"></span> App Store
               </a>
             </div>
           </div>
 
+          {/* Phone Mockup Visual */}
           <div className="hero-visual">
             <div className="phone-mockup">
               <div className="phone-notch"></div>
@@ -44,18 +57,19 @@ const Home = () => {
                   <span className="phone-chip active">Regular Course</span>
                   <span className="phone-chip">Video Course</span>
                 </div>
-                <div className="phone-section-title">Chose your Course</div>
+                <div className="phone-section-title">Choose your Course</div>
                 <div className="phone-card phone-card-purple">
                   <h4>Complete Web development</h4>
-                  <p>203 Lesson</p>
+                  <p>203 Lessons</p>
                 </div>
                 <div className="phone-card phone-card-orange">
                   <h4>Python Programming</h4>
-                  <p>168 Lesson</p>
+                  <p>168 Lessons</p>
                 </div>
               </div>
             </div>
 
+            {/* Floating Decorative Icons */}
             <div className="floating-icon icon-a">⌚</div>
             <div className="floating-icon icon-b">♪</div>
             <div className="floating-icon icon-c">✓</div>
@@ -66,6 +80,7 @@ const Home = () => {
         </div>
       </section>
 
+      {/* --- TRUSTED STATS BAND --- */}
       <section className="trusted-band">
         <h2>Trusted By Millions, Built For You</h2>
         <div className="trusted-stats">
@@ -87,16 +102,19 @@ const Home = () => {
         </div>
       </section>
 
+      {/* --- TRENDING APPS SECTION --- */}
       <section className="trending-section">
         <div className="trending-head">
           <h2>Trending Apps</h2>
           <p>Explore All Trending Apps on the Market developed by us</p>
         </div>
+        
         <div className="apps-grid apps-grid-home">
           {topApps.map((app) => (
             <AppCard key={app.id} app={app} />
           ))}
         </div>
+
         <div className="show-all-wrap">
           <Link to="/apps" className="show-all-pill">Show All</Link>
         </div>

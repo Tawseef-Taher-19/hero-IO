@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+// 1. Import the logo image
+import logoImg from "../assets/logo.png";
 
 const Footer = () => {
   return (
@@ -7,16 +9,19 @@ const Footer = () => {
         
         {/* Column 1: Brand & Bio */}
         <div className="footer-col footer-col-brand">
-          <div className="logo hero-logo">
-            <span className="logo-mark">▷</span>
+          {/* 2. Link the logo and swap span for img */}
+          <Link to="/" className="logo hero-logo">
+            <div className="logo-img-wrapper">
+              <img src={logoImg} alt="HERO.IO Logo" className="footer-logo-img" />
+            </div>
             <span className="logo-text">HERO.IO</span>
-          </div>
+          </Link>
           <p className="footer-description">
             Crafting innovative apps designed to make everyday life simpler.
           </p>
         </div>
 
-        {/* Column 2: New Dedicated Newsletter Column */}
+        {/* Column 2: Newsletter Column */}
         <div className="footer-col footer-col-newsletter">
           <h4>Stay Connected</h4>
           <p className="footer-description">

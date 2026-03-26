@@ -35,24 +35,7 @@
       { "name": "5 star", "count": 515000 }
     ]
   },
-  {
-    "image": "https://cdn.simpleicons.org/slack/4A154B",
-    "title": "Slack",
-    "companyName": "Slack Technologies",
-    "id": 3,
-    "description": "Slack is a team communication platform built for channels, messaging, huddles, file sharing, and productivity.",
-    "size": 84,
-    "reviews": 442000,
-    "ratingAvg": 4.4,
-    "downloads": 100000000,
-    "ratings": [
-      { "name": "1 star", "count": 12000 },
-      { "name": "2 star", "count": 18000 },
-      { "name": "3 star", "count": 36000 },
-      { "name": "4 star", "count": 123000 },
-      { "name": "5 star", "count": 253000 }
-    ]
-  },
+  
   {
     "image": "https://cdn.simpleicons.org/zoom/0B5CFF",
     "title": "Zoom",
