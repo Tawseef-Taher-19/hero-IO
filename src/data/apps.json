@@ -1,0 +1,416 @@
+[
+  {
+    "image": "https://cdn.simpleicons.org/spotify/1DB954",
+    "title": "Spotify",
+    "companyName": "Spotify AB",
+    "id": 1,
+    "description": "Spotify lets users stream millions of songs, podcasts, and curated playlists with personalized recommendations.",
+    "size": 95,
+    "reviews": 1824000,
+    "ratingAvg": 4.7,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 18000 },
+      { "name": "2 star", "count": 32000 },
+      { "name": "3 star", "count": 85000 },
+      { "name": "4 star", "count": 420000 },
+      { "name": "5 star", "count": 1269000 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/netflix/E50914",
+    "title": "Netflix",
+    "companyName": "Netflix, Inc.",
+    "id": 2,
+    "description": "Netflix is a subscription-based streaming service offering films, TV shows, documentaries, and exclusive originals.",
+    "size": 76,
+    "reviews": 954000,
+    "ratingAvg": 4.5,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 24000 },
+      { "name": "2 star", "count": 30000 },
+      { "name": "3 star", "count": 95000 },
+      { "name": "4 star", "count": 290000 },
+      { "name": "5 star", "count": 515000 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/slack/4A154B",
+    "title": "Slack",
+    "companyName": "Slack Technologies",
+    "id": 3,
+    "description": "Slack is a team communication platform built for channels, messaging, huddles, file sharing, and productivity.",
+    "size": 84,
+    "reviews": 442000,
+    "ratingAvg": 4.4,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 12000 },
+      { "name": "2 star", "count": 18000 },
+      { "name": "3 star", "count": 36000 },
+      { "name": "4 star", "count": 123000 },
+      { "name": "5 star", "count": 253000 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/zoom/0B5CFF",
+    "title": "Zoom",
+    "companyName": "Zoom Video Communications",
+    "id": 4,
+    "description": "Zoom provides meetings, webinars, team chat, and collaboration tools for work, education, and personal calls.",
+    "size": 67,
+    "reviews": 621000,
+    "ratingAvg": 4.3,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 23000 },
+      { "name": "2 star", "count": 24000 },
+      { "name": "3 star", "count": 47000 },
+      { "name": "4 star", "count": 170000 },
+      { "name": "5 star", "count": 357000 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/trello/0052CC",
+    "title": "Trello",
+    "companyName": "Atlassian",
+    "id": 5,
+    "description": "Trello helps teams organize projects visually using boards, lists, cards, deadlines, and collaboration features.",
+    "size": 39,
+    "reviews": 198000,
+    "ratingAvg": 4.6,
+    "downloads": 50000000,
+    "ratings": [
+      { "name": "1 star", "count": 5000 },
+      { "name": "2 star", "count": 7000 },
+      { "name": "3 star", "count": 18000 },
+      { "name": "4 star", "count": 54000 },
+      { "name": "5 star", "count": 114000 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/notion/FFFFFF",
+    "title": "Notion",
+    "companyName": "Notion Labs",
+    "id": 6,
+    "description": "Notion combines notes, docs, databases, project tracking, and team collaboration in one flexible workspace.",
+    "size": 48,
+    "reviews": 388000,
+    "ratingAvg": 4.7,
+    "downloads": 50000000,
+    "ratings": [
+      { "name": "1 star", "count": 6000 },
+      { "name": "2 star", "count": 8000 },
+      { "name": "3 star", "count": 22000 },
+      { "name": "4 star", "count": 86000 },
+      { "name": "5 star", "count": 266000 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/dropbox/0061FF",
+    "title": "Dropbox",
+    "companyName": "Dropbox, Inc.",
+    "id": 7,
+    "description": "Dropbox offers cloud storage, syncing, file backup, document sharing, and smart workspace integrations.",
+    "size": 71,
+    "reviews": 524000,
+    "ratingAvg": 4.4,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 15000 },
+      { "name": "2 star", "count": 21000 },
+      { "name": "3 star", "count": 57000 },
+      { "name": "4 star", "count": 176000 },
+      { "name": "5 star", "count": 255000 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/discord/5865F2",
+    "title": "Discord",
+    "companyName": "Discord Inc.",
+    "id": 8,
+    "description": "Discord supports communities with voice channels, text chats, servers, streaming, bots, and event tools.",
+    "size": 112,
+    "reviews": 1480000,
+    "ratingAvg": 4.6,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 32000 },
+      { "name": "2 star", "count": 37000 },
+      { "name": "3 star", "count": 79000 },
+      { "name": "4 star", "count": 410000 },
+      { "name": "5 star", "count": 922000 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/duolingo/58CC02",
+    "title": "Duolingo",
+    "companyName": "Duolingo, Inc.",
+    "id": 9,
+    "description": "Duolingo makes learning languages fun with bite-sized lessons, streaks, gamification, and speaking practice.",
+    "size": 68,
+    "reviews": 1680000,
+    "ratingAvg": 4.8,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 15000 },
+      { "name": "2 star", "count": 22000 },
+      { "name": "3 star", "count": 53000 },
+      { "name": "4 star", "count": 290000 },
+      { "name": "5 star", "count": 1300000 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/canva/00C4CC",
+    "title": "Canva",
+    "companyName": "Canva Pty Ltd",
+    "id": 10,
+    "description": "Canva is a design platform for creating presentations, social graphics, posters, videos, and marketing assets.",
+    "size": 82,
+    "reviews": 1390000,
+    "ratingAvg": 4.7,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 13000 },
+      { "name": "2 star", "count": 21000 },
+      { "name": "3 star", "count": 56000 },
+      { "name": "4 star", "count": 350000 },
+      { "name": "5 star", "count": 950000 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/telegram/26A5E4",
+    "title": "Telegram",
+    "companyName": "Telegram FZ-LLC",
+    "id": 11,
+    "description": "Telegram is a cloud-based messaging app with channels, bots, large groups, and multi-device syncing.",
+    "size": 59,
+    "reviews": 13200000,
+    "ratingAvg": 4.3,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 350000 },
+      { "name": "2 star", "count": 420000 },
+      { "name": "3 star", "count": 890000 },
+      { "name": "4 star", "count": 3410000 },
+      { "name": "5 star", "count": 8130000 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/pinterest/BD081C",
+    "title": "Pinterest",
+    "companyName": "Pinterest, Inc.",
+    "id": 12,
+    "description": "Pinterest helps people discover ideas, save inspiration, and shop visually through curated pin boards.",
+    "size": 73,
+    "reviews": 9940000,
+    "ratingAvg": 4.5,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 180000 },
+      { "name": "2 star", "count": 250000 },
+      { "name": "3 star", "count": 690000 },
+      { "name": "4 star", "count": 2810000 },
+      { "name": "5 star", "count": 6010000 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/figma/F24E1E",
+    "title": "Figma",
+    "companyName": "Figma Inc.",
+    "id": 13,
+    "description": "Figma is a collaborative design and prototyping platform used for UI, wireframing, systems, and handoff.",
+    "size": 52,
+    "reviews": 242000,
+    "ratingAvg": 4.7,
+    "downloads": 10000000,
+    "ratings": [
+      { "name": "1 star", "count": 3000 },
+      { "name": "2 star", "count": 5000 },
+      { "name": "3 star", "count": 12000 },
+      { "name": "4 star", "count": 59000 },
+      { "name": "5 star", "count": 163000 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/evernote/00A82D",
+    "title": "Evernote",
+    "companyName": "Evernote Corporation",
+    "id": 14,
+    "description": "Evernote helps users take notes, organize documents, save web pages, and keep tasks in one place.",
+    "size": 61,
+    "reviews": 1710000,
+    "ratingAvg": 4.1,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 82000 },
+      { "name": "2 star", "count": 90000 },
+      { "name": "3 star", "count": 230000 },
+      { "name": "4 star", "count": 491000 },
+      { "name": "5 star", "count": 817000 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/grammarly/15C39A",
+    "title": "Grammarly",
+    "companyName": "Grammarly, Inc.",
+    "id": 15,
+    "description": "Grammarly checks grammar, spelling, clarity, tone, and writing quality across websites and documents.",
+    "size": 44,
+    "reviews": 294000,
+    "ratingAvg": 4.6,
+    "downloads": 10000000,
+    "ratings": [
+      { "name": "1 star", "count": 4000 },
+      { "name": "2 star", "count": 7000 },
+      { "name": "3 star", "count": 19000 },
+      { "name": "4 star", "count": 78000 },
+      { "name": "5 star", "count": 186000 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/adobe/FF0000",
+    "title": "Adobe Express",
+    "companyName": "Adobe Inc.",
+    "id": 16,
+    "description": "Adobe Express makes it easy to create social content, marketing visuals, flyers, reels, and quick edits.",
+    "size": 92,
+    "reviews": 212000,
+    "ratingAvg": 4.4,
+    "downloads": 50000000,
+    "ratings": [
+      { "name": "1 star", "count": 7000 },
+      { "name": "2 star", "count": 9000 },
+      { "name": "3 star", "count": 22000 },
+      { "name": "4 star", "count": 65000 },
+      { "name": "5 star", "count": 109000 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/skype/00AFF0",
+    "title": "Skype",
+    "companyName": "Microsoft",
+    "id": 17,
+    "description": "Skype allows voice and video calls, instant messaging, international calling, and conference meetings.",
+    "size": 78,
+    "reviews": 11400000,
+    "ratingAvg": 4.2,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 350000 },
+      { "name": "2 star", "count": 420000 },
+      { "name": "3 star", "count": 890000 },
+      { "name": "4 star", "count": 3120000 },
+      { "name": "5 star", "count": 6620000 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/airbnb/FF5A5F",
+    "title": "Airbnb",
+    "companyName": "Airbnb, Inc.",
+    "id": 18,
+    "description": "Airbnb connects guests with unique stays, experiences, and short-term rentals across the world.",
+    "size": 88,
+    "reviews": 1560000,
+    "ratingAvg": 4.6,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 15000 },
+      { "name": "2 star", "count": 18000 },
+      { "name": "3 star", "count": 51000 },
+      { "name": "4 star", "count": 353000 },
+      { "name": "5 star", "count": 1123000 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/uber/FFFFFF",
+    "title": "Uber",
+    "companyName": "Uber Technologies",
+    "id": 19,
+    "description": "Uber lets users book rides, schedule trips, order food, and track drivers in real time.",
+    "size": 103,
+    "reviews": 12100000,
+    "ratingAvg": 4.6,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 170000 },
+      { "name": "2 star", "count": 240000 },
+      { "name": "3 star", "count": 710000 },
+      { "name": "4 star", "count": 2980000 },
+      { "name": "5 star", "count": 8000000 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/khanacademy/14BF96",
+    "title": "Khan Academy",
+    "companyName": "Khan Academy",
+    "id": 20,
+    "description": "Khan Academy offers free lessons, videos, quizzes, and practice for students across many subjects.",
+    "size": 46,
+    "reviews": 166000,
+    "ratingAvg": 4.8,
+    "downloads": 10000000,
+    "ratings": [
+      { "name": "1 star", "count": 1500 },
+      { "name": "2 star", "count": 2200 },
+      { "name": "3 star", "count": 6800 },
+      { "name": "4 star", "count": 32900 },
+      { "name": "5 star", "count": 122600 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/reddit/FF4500",
+    "title": "Reddit",
+    "companyName": "Reddit, Inc.",
+    "id": 21,
+    "description": "Reddit is a community platform where users join subreddits to discuss, share, vote, and explore content.",
+    "size": 63,
+    "reviews": 3210000,
+    "ratingAvg": 4.3,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 95000 },
+      { "name": "2 star", "count": 118000 },
+      { "name": "3 star", "count": 301000 },
+      { "name": "4 star", "count": 941000 },
+      { "name": "5 star", "count": 1755000 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/tiktok/FFFFFF",
+    "title": "TikTok",
+    "companyName": "ByteDance",
+    "id": 22,
+    "description": "TikTok is a short-form video app focused on entertainment, discovery, trends, music, and creator tools.",
+    "size": 129,
+    "reviews": 62100000,
+    "ratingAvg": 4.4,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 1300000 },
+      { "name": "2 star", "count": 1700000 },
+      { "name": "3 star", "count": 4500000 },
+      { "name": "4 star", "count": 16500000 },
+      { "name": "5 star", "count": 38100000 }
+    ]
+  },
+  {
+    "image": "https://cdn.simpleicons.org/github/FFFFFF",
+    "title": "GitHub",
+    "companyName": "GitHub, Inc.",
+    "id": 23,
+    "description": "GitHub helps developers host code, manage repositories, collaborate on issues, and automate workflows.",
+    "size": 37,
+    "reviews": 287000,
+    "ratingAvg": 4.8,
+    "downloads": 10000000,
+    "ratings": [
+      { "name": "1 star", "count": 2500 },
+      { "name": "2 star", "count": 4300 },
+      { "name": "3 star", "count": 11200 },
+      { "name": "4 star", "count": 52200 },
+      { "name": "5 star", "count": 216800 }
+    ]
+  }
+]
