@@ -109,3 +109,576 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+
+/* grid layout and responsiveness */
+.muted { color: var(--muted); }
+.home-layout { gap: 28px; }
+
+.hero {
+  padding: 40px;
+  text-align: center;
+  background: radial-gradient(circle at top, rgba(56, 189, 248, 0.22), transparent 35%), rgba(17, 24, 39, 0.92);
+}
+
+.hero-badge {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  color: #cbd5e1;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.apps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.app-card {
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.app-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(56, 189, 248, 0.45);
+}
+
+.app-thumb {
+  height: 180px;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 18px;
+}
+
+.app-thumb img {
+  width: 92px;
+  height: 92px;
+  object-fit: contain;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .stats-grid, .apps-grid { grid-template-columns: 1fr; }
+}
+
+
+/* new Home */
+:root {
+  --bg: #eef0f4;
+  --card: #ffffff;
+  --card-2: #f3f4f6;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --brand: #7c3aed;
+  --brand-2: #a855f7;
+  --border: rgba(15, 23, 42, 0.08);
+}
+
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background: #ebedf1;
+  color: var(--text);
+}
+
+/* Header Styles */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  backdrop-filter: blur(14px);
+  background: #13283b;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.logo { color: white; font-weight: 800; }
+.nav-link { color: rgba(255, 255, 255, 0.72); }
+.nav-link.active { color: white; }
+
+/* Button Styles */
+.btn {
+  background: linear-gradient(135deg, var(--brand), var(--brand-2));
+  color: white;
+  border-radius: 14px;
+  padding: 12px 18px;
+  font-weight: 700;
+}
+
+/* Hero & Mockup Styles */
+.hero-lite { background: #f8f8fb; padding: 18px 18px 0; }
+.hero-brand { font-weight: 800; color: #4f46e5; }
+.hero-brand span { color: #a855f7; }
+
+.phone-mockup {
+  width: 240px;
+  background: linear-gradient(180deg, #0f172a, #1e1b4b);
+  border-radius: 28px;
+  padding: 14px 12px;
+  box-shadow: 0 18px 40px rgba(76, 29, 149, 0.28);
+  margin: 0 auto;
+}
+
+.phone-screen {
+  background: linear-gradient(180deg, #24113f, #1e1b4b);
+  border-radius: 22px;
+  padding: 12px;
+  min-height: 360px;
+}
+
+.floating-icon {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-weight: 800;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Trusted Band */
+.trusted-band {
+  background: linear-gradient(135deg, #7c3aed, #a855f7);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.trusted-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .trusted-stats, .apps-grid { grid-template-columns: 1fr; }
+  .hero-lite-content { grid-template-columns: 1fr; }
+}
+
+/* addition */
+:root {
+  --bg: #ececec;
+  --text: #18314f;
+  --brand: #7c3aed;
+}
+
+/* New Header Styles */
+.header {
+  background: #ffffff;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.05);
+}
+
+.logo-mark {
+  border: 2px solid #3b82f6;
+  border-radius: 50%;
+  color: #3b82f6;
+}
+
+/* App Card Redesign */
+.app-card {
+  background: #f7f7f7;
+  border-radius: 0; /* Square minimalist look */
+  border: 1px solid #e5e7eb;
+}
+
+.meta-download {
+  background: #dcfce7;
+  color: #22c55e;
+}
+
+.meta-rating {
+  background: #ffedd5;
+  color: #f97316;
+}
+
+/* Phone Mockup Additions */
+.phone-chip {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 0.62rem;
+}
+
+.phone-card-orange {
+  background: linear-gradient(135deg, #fb7185, #f97316);
+}
+
+/* footer update */
+/* Footer Styles */
+.footer {
+  background: #ffffff;
+  border-top: 1px solid var(--border);
+  padding: 60px 0 0;
+  color: var(--text);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr; /* Brand column is wider */
+  gap: 40px;
+  padding-bottom: 60px;
+}
+
+.footer-col h4 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--brand);
+}
+
+.footer-description {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--muted);
+  max-width: 320px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: var(--muted);
+  font-size: 0.85rem;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: var(--brand);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(15, 23, 42, 0.05);
+  padding: 24px 0;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--muted);
+  background: #f9fafb;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 32px;
+  }
+  
+  .footer-description {
+    margin: 15px auto 0;
+  }
+}
+
+/* 4-col footer */
+.footer-newsletter {
+  margin-top: 24px;
+}
+
+.footer-newsletter h5 {
+  margin: 0 0 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text);
+  text-transform: none;
+}
+
+.newsletter-form {
+  display: flex;
+  max-width: 280px;
+  position: relative;
+}
+
+.newsletter-input {
+  width: 100%;
+  padding: 10px 45px 10px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  background: #f9fafb;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.newsletter-input:focus {
+  border-color: var(--brand);
+}
+
+.newsletter-btn {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  bottom: 5px;
+  width: 32px;
+  background: var(--brand);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  font-size: 1.1rem;
+  transition: opacity 0.2s;
+}
+
+.newsletter-btn:hover {
+  opacity: 0.9;
+}
+
+/* Adjusting mobile alignment */
+@media (max-width: 768px) {
+  .newsletter-form {
+    margin: 0 auto;
+  }
+}
+
+/* last footer */
+/* Footer Styles */
+.footer {
+  background: #ffffff;
+  border-top: 1px solid var(--border);
+  padding: 20px 0 0; /* More padding on top like the example */
+  color: #fdfdfd;
+  background: #001931;
+}
+
+.footer-grid {
+  display: grid;
+  /* 4 columns total: 
+     2 wider (brand/newsletter) + 2 standard (links) */
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr; 
+  gap: 50px; /* Wider gaps for better spacing */
+  padding-bottom: 20px;
+}
+
+.footer-col h4 {
+  font-size: 0.95rem; /* Matches Example Image style */
+  font-weight: 700;
+  margin: 0 0 24px; /* More spacing under titles */
+  text-transform: capitalize; /* "Platform", not "PLATFORM" */
+  letter-spacing: 0;
+  color: #fdfdfd;
+  background: #001931; /* Titles now match text color, not brand */
+}
+
+.footer-description {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: #6b7280; /* Neutral grey color */
+  margin-bottom: 24px;
+  max-width: 320px;
+}
+
+/* Adjustments for the specific new columns */
+.footer-col-brand .hero-logo {
+  margin-bottom: 20px;
+}
+
+.footer-col-links .footer-links {
+  gap: 16px; /* More spacing between links */
+}
+
+/* Link Styles */
+.footer-links a {
+  text-decoration: none;
+  color: #6b7280; /* Neutral grey */
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: var(--brand); /* Purpose on hover */
+}
+
+/* Newsletter Styles (mostly same, slightly tweaked) */
+.footer-newsletter {
+  max-width: 300px;
+}
+
+.newsletter-form {
+  display: flex;
+  position: relative;
+}
+
+.newsletter-input {
+  width: 100%;
+  padding: 12px 50px 12px 14px; /* Taller input */
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  background: #f9fafb;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.newsletter-input:focus {
+  border-color: var(--brand);
+}
+
+.newsletter-btn {
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  bottom: 6px;
+  width: 36px; /* Slightly larger */
+  background: var(--brand);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  font-size: 1.2rem;
+  transition: opacity 0.2s;
+}
+
+.newsletter-btn:hover {
+  opacity: 0.9;
+}
+
+/* Bottom Bar */
+.footer-bottom {
+  border-top: 1px solid rgba(15, 23, 42, 0.05);
+  padding: 30px 0;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #fdfdfd;
+  background: #001931; /* Very subtle background */
+}
+
+/* Responsive Footer */
+@media (max-width: 1024px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr; /* Switch to 2x2 on tablets */
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr; /* Stack on phones */
+    text-align: center;
+    gap: 32px;
+  }
+  
+  .footer-description, .footer-newsletter {
+    margin: 0 auto 24px;
+  }
+}
+
+/* card design improve */
+/* Card Container */
+.app-card {
+  display: grid;
+  gap: 14px;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 14px;
+  padding: 16px;
+  background: #f8f8f8;
+  border: 1px solid #ececec;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
+}
+
+.app-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(139, 92, 246, 0.22);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.1);
+}
+
+/* Thumbnail with Gradient */
+.app-thumb {
+  height: 255px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(180deg, #eee8fb, #dfd5fb);
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.app-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Typography & Meta Pills */
+.app-info h3 {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #111827;
+  font-weight: 700;
+  line-height: 1.45;
+  min-height: 54px;
+  text-align: center;
+}
+
+.app-meta {
+  margin-top: 2px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: 0.88rem;
+}
+
+.meta-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.meta-download {
+  background: #dff5eb;
+  color: #10b981;
+}
+
+.meta-rating {
+  background: #e8e2fb;
+  color: #6d28d9;
+}
+
+.meta-icon {
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .app-thumb {
+    height: 220px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .app-thumb {
+    height: 230px;
+  }
+}

@@ -1,32 +1,64 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="container footer-grid">
-        <div>
-          <h3>Hero IO</h3>
-          <p>
-            Discover trending productivity, learning, communication, and
-            creative apps in one beautiful responsive app directory.
+        
+        {/* Column 1: Brand & Bio */}
+        <div className="footer-col footer-col-brand">
+          <div className="logo hero-logo">
+            <span className="logo-mark">▷</span>
+            <span className="logo-text">HERO.IO</span>
+          </div>
+          <p className="footer-description">
+            Crafting innovative apps designed to make everyday life simpler.
           </p>
         </div>
-        
-        <div>
-          <h4>Quick Links</h4>
-          <p>Home</p>
-          <p>Apps</p>
-          <p>Installation</p>
+
+        {/* Column 2: New Dedicated Newsletter Column */}
+        <div className="footer-col footer-col-newsletter">
+          <h4>Stay Connected</h4>
+          <p className="footer-description">
+            Subscribe to our newsletter for updates.
+          </p>
+          <div className="footer-newsletter">
+            <form className="newsletter-form" onSubmit={(e) => e.preventDefault()}>
+              <input 
+                type="email" 
+                placeholder="Email address" 
+                className="newsletter-input" 
+              />
+              <button type="submit" className="newsletter-btn">→</button>
+            </form>
+          </div>
         </div>
         
-        <div>
-          <h4>Built With</h4>
-          <p>React</p>
-          <p>React Router</p>
-          <p>Recharts</p>
+        {/* Column 3: Platform Links */}
+        <div className="footer-col footer-col-links">
+          <h4>Platform</h4>
+          <nav className="footer-links">
+            <Link to="/">Home</Link>
+            <Link to="/apps">Explore Apps</Link>
+            <Link to="/installation">Installation</Link>
+          </nav>
+        </div>
+        
+        {/* Column 4: Developer Links */}
+        <div className="footer-col footer-col-links">
+          <h4>Developer</h4>
+          <nav className="footer-links">
+            <a href="https://react.dev" target="_blank" rel="noreferrer">Built with React</a>
+            <a href="https://github.com/" target="_blank" rel="noreferrer">Open Source</a>
+            <a href="https://recharts.org" target="_blank" rel="noreferrer">Data by Recharts</a>
+          </nav>
         </div>
       </div>
       
       <div className="footer-bottom">
-        © 2026 Hero IO. All rights reserved.
+        <div className="container">
+          <p>© 2026 HERO.IO. All rights reserved.</p>
+        </div>
       </div>
     </footer>
   );
