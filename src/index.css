@@ -1587,3 +1587,31 @@ div.show-all-wrap{
     width: 100%;
   }
 }
+
+/* animation loading */
+.loading-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+}
+
+.fullscreen-loader {
+  min-height: 100vh;
+}
+
+.search-loader-wrap {
+  min-height: 220px;
+  display: grid;
+  place-items: center;
+}
+
+/* Mobile adjustment */
+@media (max-width: 768px) {
+  .search-loader-wrap {
+    min-height: 180px;
+  }
+}

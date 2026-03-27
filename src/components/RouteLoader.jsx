@@ -7,13 +7,8 @@ const RouteLoader = () => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    // When the path changes, start loading
     setLoading(true);
-    
-    // Set a small timer so the spinner is visible but not annoying
-    const timer = setTimeout(() => setLoading(false), 350);
-    
-    // Cleanup the timer if the user leaves the page quickly
+    const timer = setTimeout(() => setLoading(false), 500);
     return () => clearTimeout(timer);
   }, [location.pathname]);
 
@@ -21,7 +16,7 @@ const RouteLoader = () => {
 
   return (
     <div className="route-loader">
-      <LoadingSpinner text="Loading page..." />
+      <LoadingSpinner text="Loading page..." fullScreen />
     </div>
   );
 };
