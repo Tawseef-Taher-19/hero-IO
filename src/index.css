@@ -1155,19 +1155,20 @@ div.show-all-wrap{
   flex-wrap: wrap;
   gap: 14px;
   margin-bottom: 20px;
-  margin-left: 3rem;
+  /* margin-left: 3rem; */
   color: #cbd5e1;
 }
 
 .chart-wrap {
   width: 90%;
   height: 360px;
-  margin-left: 3rem;
+  margin-left: 2rem;
 }
 
 .description {
   line-height: 1.75;
-  color: #dbeafe;
+  color: gray;
+  margin-bottom: 3rem;
 }
 
 /* Mobile Responsiveness */
