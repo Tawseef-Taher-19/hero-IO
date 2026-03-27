@@ -339,13 +339,13 @@ body {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr; /* Brand column is wider */
   gap: 40px;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
 }
 
 .footer-col h4 {
   font-size: 0.9rem;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: var(--brand);
@@ -1156,7 +1156,7 @@ div.show-all-wrap{
   gap: 14px;
   margin-bottom: 20px;
   /* margin-left: 3rem; */
-  color: #cbd5e1;
+  color: #071d38;
 }
 
 .chart-wrap {
@@ -1176,4 +1176,238 @@ div.show-all-wrap{
   .details-grid {
     grid-template-columns: 1fr;
   }
+}
+
+.center-box,.btn-error{
+  margin: 1rem 1rem;
+}
+.center-box p {
+  max-width: 600px;
+  margin: 0 auto; /* Keeps the restricted-width text centered */
+  line-height: 3.2;
+}
+
+.footer-bottom{
+  margin-bottom: 0rem;
+}
+
+/* appDetails */
+.details-image {
+  width: 160px;
+  height: 160px;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #d9f99d, #bef264);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+/* The inner container that creates the unique floor/sky effect */
+.details-image .image-bg {
+  width: 85%;
+  height: 85%;
+  border-radius: 12px;
+  background: linear-gradient(
+    180deg,
+    #bbf7d0 0%,
+    #bbf7d0 60%,
+    #92400e 60%,
+    #78350f 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.details-image img {
+  width: 70%;
+  height: 70%;
+  /* Contain ensures the icon doesn't stretch or hit the edges of the image-bg */
+  object-fit: contain;
+  /* Optional: adds a little depth to the icon itself */
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+
+/* update appDetail */
+/* App Details Page Layout */
+.app-details-page {
+  padding-top: 40px;
+}
+
+.details-header-flex {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+/* The Unique Icon Frame from Image 3 */
+.details-image-outer {
+  width: 160px;
+  height: 160px;
+  background: linear-gradient(180deg, #d9f99d 0%, #bef264 100%);
+  border-radius: 20px;
+  padding: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.image-bg-floor {
+  width: 100%;
+  height: 100%;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #bbf7d0 0%, #bbf7d0 60%, #92400e 60%, #78350f 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.main-app-logo {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+
+/* Info Section Styling */
+.app-title-big {
+  font-size: 2.2rem;
+  color: #1e1b4b;
+  margin-bottom: 4px;
+}
+
+.app-dev-text {
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+.app-dev-text span {
+  color: #6366f1;
+  font-weight: 500;
+}
+
+.purple-divider {
+  height: 1px;
+  background: #e0e7ff;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.stats-dashboard {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 24px;
+}
+
+.stat-item {
+  border-right: 1px dashed #d1d5db;
+  padding-right: 32px;
+}
+
+.stat-item:last-child {
+  border-right: none;
+}
+
+.stat-item small {
+  display: block;
+  color: #9ca3af;
+  font-size: 0.75rem;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.stat-value {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.stat-value strong {
+  font-size: 1.4rem;
+  color: #111827;
+}
+
+.stat-icon {
+  font-size: 1.2rem;
+}
+
+.icon-dl { color: #6366f1; }
+.icon-star { color: #fbbf24; }
+.icon-rev { color: #8b5cf6; }
+
+/* Install Button */
+.install-btn-gradient {
+  background: linear-gradient(180deg, #34d399 0%, #10b981 100%);
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.3);
+  transition: transform 0.2s;
+}
+
+.install-btn-gradient:hover {
+  transform: translateY(-2px);
+}
+
+.install-btn-gradient:disabled {
+  background: #d1d5db;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+/* Section Spacing */
+.section-separator {
+  height: 1px;
+  background: #f3f4f6;
+  margin: 40px 0 24px;
+}
+
+.section-heading {
+  font-size: 1.5rem;
+  color: #1e1b4b;
+  margin-bottom: 20px;
+}
+
+.description-text p {
+  line-height: 1.8;
+  color: #4b5563;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .details-header-flex {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+  .stats-dashboard {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .stat-item {
+    border-right: none;
+    border-bottom: 1px dashed #d1d5db;
+    padding: 0 0 10px;
+    width: 100%;
+  }
+}
+.details-image-container{
+  margin-left: 2rem;
+}
+.app-title-big,.description-text{
+  margin-bottom: 2rem;
+}
+.stat-item{
+  margin-left: 1rem;
+}
+.install-btn-gradient{
+  color: black;
+  /* background-color: purple; */
 }
