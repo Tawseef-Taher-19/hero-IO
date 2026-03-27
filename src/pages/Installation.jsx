@@ -1,81 +1,101 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import { Link } from "react-router-dom";
 import toast from "react-hot-toast";
 import { getInstalledApps, uninstallApp } from "../utils/localStorage";
 
 const formatDownloads = (value) => {
-  if (value >= 1000000000) return `${(value / 1000000000).toFixed(1)}B+`;
-  if (value >= 1000000) return `${(value / 1000000).toFixed(1)}M+`;
-  return `${(value / 1000).toFixed(1)}K+`;
+  if (value >= 1000000000) return `${(value / 1000000000).toFixed(1)}B`;
+  if (value >= 1000000) return `${(value / 1000000).toFixed(1)}M`;
+  return `${(value / 1000).toFixed(1)}K`;
 };
 
 const Installation = () => {
   const [installedApps, setInstalledApps] = useState([]);
+  const [sortBy, setSortBy] = useState("");
 
-  // Load installed apps from localStorage on component mount
   useEffect(() => {
     setInstalledApps(getInstalledApps());
   }, []);
 
+  // Sorting Logic based on Download Count
+  const sortedApps = useMemo(() => {
+    let result = [...installedApps];
+
+    if (sortBy === "low-high") {
+      // Sorts by fewest downloads first
+      result.sort((a, b) => a.downloads - b.downloads);
+    } else if (sortBy === "high-low") {
+      // Sorts by most downloads first
+      result.sort((a, b) => b.downloads - a.downloads);
+    }
+
+    return result;
+  }, [installedApps, sortBy]);
+
   const handleUninstall = (app) => {
-    // Remove from storage and get updated list
     const updated = uninstallApp(app.id);
-    // Update local state to trigger re-render
     setInstalledApps(updated);
     toast.success(`${app.title} uninstalled from your device.`);
   };
 
   return (
-    <section className="section-block">
-      <div className="title-box card">
-        <h1>My Installation</h1>
-        <p className="muted">
-          Check all installed apps and remove them any time.
-        </p>
+    <section className="installation-page container">
+      <div className="installation-header">
+        <h1>Your Installed Apps</h1>
+        <p className="muted">Explore All Trending Apps on the Market developed by us</p>
       </div>
 
       {installedApps.length ? (
-        <div className="apps-grid">
-          {installedApps.map((app) => (
-            <div className="card app-card" key={app.id}>
-              <div className="app-thumb">
-                <img src={app.image} alt={app.title} />
-              </div>
-              <div className="app-info">
-                <h3>{app.title}</h3>
-                <p className="muted">{app.companyName}</p>
-                <div className="app-meta">
-                  <span className="meta-pill">
-                    <span className="meta-icon">⬇</span> 
-                    {formatDownloads(app.downloads)}
-                  </span>
-                  <span className="meta-pill">
-                    <span className="meta-icon">⭐</span> 
-                    {app.ratingAvg}
-                  </span>
-                </div>
-              </div>
-              {/* Uninstall Button with tactile feedback */}
-              <button 
-                className="btn btn-danger" 
-                onClick={() => handleUninstall(app)}
-                style={{ marginTop: '15px', width: '100%' }}
+        <div className="installation-content">
+          <div className="installation-controls">
+            <h3>{installedApps.length} Apps Found</h3>
+            <div className="sort-container">
+              <select 
+                className="sort-select" 
+                value={sortBy} 
+                onChange={(e) => setSortBy(e.target.value)}
               >
-                Uninstall
-              </button>
+                <option value="">Sort By Downloads (Default)</option>
+                <option value="high-low">Downloads: High to Low</option>
+                <option value="low-high">Downloads: Low to High</option>
+              </select>
             </div>
-          ))}
+          </div>
+
+          <div className="installation-list">
+            {sortedApps.map((app) => (
+              <div className="install-row-card" key={app.id}>
+                <div className="install-row-left">
+                  <div className="install-row-thumb">
+                    <img src={app.image} alt={app.title} />
+                  </div>
+                  <div className="install-row-info">
+                    <h3>{app.title}</h3>
+                    <div className="install-row-meta">
+                      <span style={{ fontWeight: 'bold', color: '#6366f1' }}>
+                        <span className="icon">⬇</span> {formatDownloads(app.downloads)}
+                      </span>
+                      <span><span className="icon-star">★</span> {app.ratingAvg}</span>
+                      <span>{app.size} MB</span>
+                    </div>
+                  </div>
+                </div>
+                
+                <button 
+                  className="uninstall-btn-teal" 
+                  onClick={() => handleUninstall(app)}
+                >
+                  Uninstall
+                </button>
+              </div>
+            ))}
+          </div>
         </div>
       ) : (
-        /* Empty State */
         <div className="center-box card">
           <h2>No Installed App Yet</h2>
-          <p className="muted">
-            Install apps from the details page and they will appear here.
-          </p>
-          <Link to="/apps" className="btn" style={{ marginTop: '20px' }}>
-            Explore Apps
-          </Link>
+          <p className="muted">Install apps from the details page and they will appear here.</p>
+          <Link to="/apps" className="btn btn-main">Explore Apps</Link>
         </div>
       )}
     </section>

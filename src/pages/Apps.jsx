@@ -51,8 +51,8 @@ Explore All Apps on the Market developed by us. We code for Millions
 
       <div className="toolbar card">
         <div>
-          <h3>{filteredApps.length} Apps Found</h3>
-          <p className="muted">Search is case-insensitive and updates live.</p>
+          <h3>({filteredApps.length}) Apps Found</h3>
+          {/* <p className="muted">Search is case-insensitive and updates live.</p> */}
         </div>
 
         <div className="toolbar-controls">

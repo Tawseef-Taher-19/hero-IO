@@ -24,8 +24,21 @@ const AppDetails = () => {
   const app = useMemo(() => apps.find((item) => item.id === Number(id)), [id]);
   const [installed, setInstalled] = useState(app ? isAppInstalled(app.id) : false);
 
-  if (!app) return <div className="center-box"><h1>App Not Found</h1></div>;
+if (!app) {
+    return (
+      <div className="center-box card">
+        <h1>App Not Found</h1>
+        <p className="muted">
+          The app you are looking for does not exist or has been removed.
+        </p>
+        <Link to="/" className="btn">
+          Back to Home
+        </Link>
+      </div>
+    );
+  }
 
+  
   const handleInstall = () => {
     if (installApp(app)) {
       setInstalled(true);

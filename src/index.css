@@ -854,6 +854,7 @@ body {
 .nav-link.active {
   color: var(--brand);
   background: transparent; /* Clean look for the selected item */
+  /* text-decoration: none; */
 }
 
 /* Keep the indicator line for the active link */
@@ -983,15 +984,15 @@ section.trending-section{
 
 div.show-all-wrap{
   
-  width:5rem;
+  /* width:5rem; */
   padding: 10px 70px;
-  /* background-color:   linear-gradient(180deg, rgb(170, 31, 170), #a252f6); */
-  background-color: #a252f6;
-  color: white;
+  background-color:   linear-gradient(180deg, rgb(170, 31, 170), #a252f6);
+  /* background-color: #a252f6; */
+  /* color: white; */
   border-radius:5%;
-  margin: 1rem auto;
+  /* margin: 1rem auto; */
   text-align: center;
-  
+  text-decoration: none;
 }
 
 /* logo size */
@@ -1179,7 +1180,7 @@ div.show-all-wrap{
 }
 
 .center-box,.btn-error{
-  margin: 1rem 1rem;
+  margin: 2rem 2rem;
 }
 .center-box p {
   max-width: 600px;
@@ -1357,9 +1358,10 @@ div.show-all-wrap{
 }
 
 .install-btn-gradient:disabled {
-  background: #d1d5db;
+  background: #107550;
   box-shadow: none;
   cursor: not-allowed;
+  color:white;
 }
 
 /* Section Spacing */
@@ -1403,6 +1405,7 @@ div.show-all-wrap{
 }
 .app-title-big,.description-text{
   margin-bottom: 2rem;
+  margin-left:-5px;
 }
 .stat-item{
   margin-left: 1rem;
@@ -1410,4 +1413,177 @@ div.show-all-wrap{
 .install-btn-gradient{
   color: black;
   /* background-color: purple; */
+}
+
+.details-image {
+  width: 160px;
+  height: 160px;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #d9f99d, #bef264);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+/* The inner container that creates the unique floor/sky effect */
+.details-image .image-bg {
+  width: 85%;
+  height: 85%;
+  border-radius: 12px;
+  background: linear-gradient(
+    180deg,
+    #bbf7d0 0%,
+    #bbf7d0 60%,
+    #92400e 60%,
+    #78350f 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.details-image img {
+  width: 70%;
+  height: 70%;
+  /* Contain ensures the icon doesn't stretch or hit the edges of the image-bg */
+  object-fit: contain;
+  /* Optional: adds a little depth to the icon itself */
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+}
+.toolbar{
+  margin-left: 2.5rem;
+}
+
+/* installation.jsx */
+/* Installation Page Specifics */
+.installation-page {
+  padding: 60px 0;
+}
+
+.installation-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.installation-header h1 {
+  font-size: 2.5rem;
+  color: #1e1b4b;
+  margin-bottom: 10px;
+}
+
+.installation-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  padding: 0 10px;
+}
+
+.installation-controls h3 {
+  font-size: 1.2rem;
+  color: #111827;
+}
+
+/* Sort Dropdown styling */
+.sort-select {
+  padding: 8px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  background-color: #f9fafb;
+  color: #6b7280;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+/* Row Card Layout */
+.installation-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.install-row-card {
+  background: white;
+  border-radius: 12px;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s;
+}
+
+.install-row-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.install-row-thumb {
+  width: 60px;
+  height: 60px;
+  background: #e5e7eb; /* Placeholder color like the grey boxes in Figma */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.install-row-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.install-row-info h3 {
+  margin: 0 0 4px 0;
+  font-size: 1.1rem;
+  color: #1f2937;
+}
+
+.install-row-meta {
+  display: flex;
+  gap: 15px;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.install-row-meta .icon { color: #10b981; }
+.install-row-meta .icon-star { color: #f59e0b; }
+
+/* Teal Uninstall Button */
+.uninstall-btn-teal {
+  background-color: #10b981;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.uninstall-btn-teal:hover {
+  background-color: #059669;
+}
+
+.installation-header p{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.installation-page{
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .install-row-card {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+  .uninstall-btn-teal {
+    width: 100%;
+  }
 }

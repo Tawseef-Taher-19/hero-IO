@@ -116,7 +116,7 @@ const Home = () => {
         </div>
 
         <div className="show-all-wrap">
-          <Link to="/apps" className="show-all-pill">Show All</Link>
+          <Link to="/apps" className="show-all-pill btn">Show All</Link>
         </div>
       </section>
     </div>
